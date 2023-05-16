@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C33364A-37F6-4E87-B897-3BC621E10157}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LibraryOfDennysa</RootNamespace>
+    <AssemblyName>LibraryOfDennysa</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACTIUNI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACTIUNI.Designer.cs">
+      <DependentUpon>ACTIUNI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADAUGARE_CARTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADAUGARE_CARTE.Designer.cs">
+      <DependentUpon>ADAUGARE_CARTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AFISARE_CARTI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AFISARE_CARTI.Designer.cs">
+      <DependentUpon>AFISARE_CARTI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibliotecaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CAUTARE_CARTI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAUTARE_CARTI.Designer.cs">
+      <DependentUpon>CAUTARE_CARTI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMPRUMUTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMPRUMUTA.Designer.cs">
+      <DependentUpon>IMPRUMUTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SIGNIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SIGNIN.Designer.cs">
+      <DependentUpon>SIGNIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STERGERE_CARTI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STERGERE_CARTI.Designer.cs">
+      <DependentUpon>STERGERE_CARTI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ACTIUNI.resx">
+      <DependentUpon>ACTIUNI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADAUGARE_CARTE.resx">
+      <DependentUpon>ADAUGARE_CARTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AFISARE_CARTI.resx">
+      <DependentUpon>AFISARE_CARTI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAUTARE_CARTI.resx">
+      <DependentUpon>CAUTARE_CARTI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMPRUMUTA.resx">
+      <DependentUpon>IMPRUMUTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SIGNIN.resx">
+      <DependentUpon>SIGNIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STERGERE_CARTI.resx">
+      <DependentUpon>STERGERE_CARTI.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BibliotecaDataSet.xsc">
+      <DependentUpon>BibliotecaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BibliotecaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BibliotecaDataSet.xss">
+      <DependentUpon>BibliotecaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signinBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meniuBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meniuBG_BW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adaugaBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Biblioteca.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Biblioteca_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Biblioteca.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\imprumutaBG.jpg" />
+    <None Include="Resources\stergeBG.jpg" />
+    <None Include="Resources\cautareBG.jpg" />
+    <None Include="Resources\afisareBG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
